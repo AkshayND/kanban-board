@@ -1,0 +1,256 @@
+.app {
+}
+
+
+.board {
+  /* border: 1px solid #ddd; */
+  border-radius: 4px;
+  padding: 10px;
+  width: 400px;
+
+}
+
+body {
+  display: block;
+}
+
+.board-title{ 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.board-headings {
+  display: flex;
+  align-items: center;
+}
+
+.board-icons {
+  justify-self: end;
+}
+
+main {
+  background-color: #f4f5f8;
+  width: 100%;
+}
+
+header {
+  /* height: 50px; */
+  padding: 10px 30px;
+}
+
+.kanbanBoard {
+  display: inline-flex;
+  justify-content: space-between;
+  padding: 0px 30px;
+  color: #000;
+  background-color: #f4f5f8;
+}
+
+.task-card {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+h2 {
+  /* border-bottom: 1px solid #ddd; */
+  /* padding-bottom: 10px; */
+  color: #3f3f3f;
+}
+
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 90px; /* Location of the box */
+  padding-left: 0px;
+  left: 0;
+  top: 0;
+  border: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+}
+/* Modal Content */
+.modal-content {
+  background-color: #f1efef;
+  margin: 0px 20px;
+  padding: 10px 20px 20px 20px;
+  border: 1px solid #d2d2d2;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  width: 300px;
+}
+
+.closeBtn {
+  background-color: #f7f6f6;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.closeBtn:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: #f7f6f6;
+}
+
+.btnForm {
+  display: flex;
+  justify-content: end;
+}
+
+.filterContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filterSelect{
+  width: 200px;
+  padding: 10px ;
+  border-radius: 12px;
+  border:  1px solid #e6e6e6;
+}
+
+.filterLabel {
+  padding: 5px 0px;
+  font-weight: bold;
+  color: #616161;
+}
+
+.card {
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 20px;
+
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.avatar-container {
+  position: relative;
+  display: inline-block;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.status-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #00FF00; 
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 2px solid white; 
+  transform: translate(25%, 25%);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 1.5em;
+  color: #333;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.card-badge {
+  background: #eee;
+  border-radius: 15px;
+  padding: 5px 10px;
+  font-size: 0.8em;
+}
+
+.card-content {
+  margin-top: 20px;
+}
+
+.feature-request {
+  background-color: lightgray;
+  border-radius: 15px;
+  padding: 5px 15px;
+  font-weight: bold;
+}
+
+.user-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.alert-icon {
+  background: none;
+  border: none;
+  margin-right: 5px;
+}
+
+.card-id {
+  color: #9b9b9b;
+  font-weight: bold;
+}
+
+.tag {
+  border: 1px solid #e4e4e4;
+  border-radius: 10px;
+  padding: 5px 10px;
+  align-items: center;
+  display: flex;
+}
+
+.tag-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #bfc2c7; 
+  margin-right: 10px;
+}
+
+.tag-content {
+  color: #696969;
+
+}
+
+.displayBtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.footer-icon {
+  display: flex;
+  align-content: center;
+  border: 1px solid #e4e4e4;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  color: #696969;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
